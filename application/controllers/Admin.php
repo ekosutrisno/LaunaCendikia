@@ -28,6 +28,7 @@ class Admin extends CI_Controller
 
       $data['judul'] = 'Role';
       $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
       $data['role'] = $this->db->get('user_role')->result_array();
 
       $this->load->view('templates/menu_header', $data);
@@ -37,7 +38,7 @@ class Admin extends CI_Controller
       $this->load->view('templates/menu_footer');
    }
 
-   public function roleaccess($role_id)
+   public function roleAccess($role_id)
    {
 
       $data['judul'] = 'Role Access';

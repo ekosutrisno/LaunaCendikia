@@ -56,8 +56,8 @@
          url: "<?= base_url('admin/changeaccess'); ?>",
          type: 'post',
          data: {
-            menuId = menuId,
-            roleId = roleId
+            menuId: menuId,
+            roleId: roleId
          },
          success: function() {
             document.location.href = "<?= base_url('admin/roleaccess/'); ?>" + roleId;
