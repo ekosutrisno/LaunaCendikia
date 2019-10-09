@@ -3,8 +3,9 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-       <div class="sidebar-brand-icon rotate-n-15">
-          <img src="<?= base_url('assets/img/icon/full-w.png'); ?>" width="40" height="40">
+       <div class="sidebar-brand-icon">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <!-- <img src="<?= base_url('assets/img/icon/logo_wp.png'); ?>" width="40" height="40"> -->
        </div>
        <div class="sidebar-brand-text mx-3">LC MTSN 2</div>
     </a>
@@ -57,13 +58,13 @@
              <li class="nav-item">
              <?php endif; ?>
 
-             <a class="nav-link" href="<?= base_url($sm['url']); ?>">
+             <a class="nav-link pb-0" href="<?= base_url($sm['url']); ?>">
                 <i class="<?= $sm['icon']; ?>"></i>
                 <span><?= $sm['title']; ?></span></a>
              </li>
           <?php endforeach; ?>
           <!-- Divider -->
-          <hr class="sidebar-divider">
+          <hr class="sidebar-divider mt-3">
        <?php endforeach; ?>
 
        <!-- end Query Menu -->
