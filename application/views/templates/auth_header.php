@@ -18,14 +18,13 @@
    <!-- Custom styles for this template-->
    <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
 
-   <!-- <style>
+   <style>
       body {
-         background-image: url(<?= base_url('assets/img/bg_1.png'); ?> );
-         <bacground-repeat: no-repeat;
-         background-size: cover;
+         /* background-image: url(<?= base_url('assets/img/bg_1.png'); ?> ); */
+         background: #041D2E;
       }
-   </style> -->
+   </style>
 
 </head>
 
-<body class="bg-light">
+<body class="">

@@ -1,18 +1,25 @@
 <div class="container">
 
    <!-- Outer Row -->
-   <div class="row justify-content-center">
+   <div class="row">
+
+      <!-- input login -->
+      <div class="col-lg-6 text-center">
+         <img src="<?= base_url('assets/img/pic/wp3.png'); ?>" class="img-fluid">
+         <br>
+         <a class="btn btn-sm btn-outline-light mt-3" href="<?= base_url('about'); ?>">Yuk kenalan dengan Launa Cendikia</a>
+      </div>
 
       <div class="col-lg-6">
 
-         <div class="card o-hidden border-0 shadow-lg my-5">
+         <div class="card o-hidden border-0 shadow-lg my-5 " style="background:#041D2E">
             <div class="card-body p-0">
                <!-- Nested Row within Card Body -->
                <div class="row">
                   <div class="col-lg">
                      <div class="p-5">
                         <div class="text-center">
-                           <h1 class="h4 text-gray-900 mb-4">Login Page</h1>
+                           <h1 class="h4 text-white mb-4" style="">Login Page</h1>
                         </div>
 
                         <!-- flasdata -->
@@ -36,7 +43,7 @@
                            <a class="small" href="forgot-password.html">Forgot Password?</a>
                         </div>
                         <div class="text-center">
-                           <a class="small" href="<?= base_url('auth/registration'); ?>">Create an Account!</a>
+                           <a class="small text-white" href="<?= base_url('auth/registration'); ?>">Create an Account!</a>
                         </div>
                      </div>
                   </div>
@@ -45,7 +52,14 @@
          </div>
 
       </div>
-
+      <!-- end iput login -->
+   </div>
+   <div class="row py-3">
+      <div class="col-lg text-center">
+         <small>
+            <p class="">Selamat datang di portal aplikasi Launa Cendikia V.1.0 <br>Copyright &copy; Launa Cendikia 2019 </p>
+         </small>
+      </div>
    </div>
 
 </div>

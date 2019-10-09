@@ -7,7 +7,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
    <link rel="stylesheet" href="<?= base_url(); ?>assets/css/bootstrap.min.css">
-   <!-- <link rel="stylesheet" href="<?= base_url(); ?>assets/fontawesome/css/all.css"> -->
+   <link rel="stylesheet" href="<?= base_url(); ?>assets/fontawesome-free/css/all.min.css">
    <link rel="stylesheet" href="<?= base_url(); ?>assets/style.css">
 
    <title><?= $judul; ?></title>
@@ -25,7 +25,7 @@
 <body>
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container  mb-0">
-         <a class="navbar-brand" href="">
+         <a class="navbar-brand" href="<?= base_url(); ?>About">
             <h1>Launa <span class="" style="color:aquamarine;font-weight:lighter">Cendikia</span></h1>
          </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +33,9 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-               <a class="nav-item nav-link" href="<?= base_url(); ?>">Home <span class="sr-only">(current)</span></a>
-               <a class="nav-item nav-link" href="<?= base_url(); ?>Anggota">Anggota</a>
                <a class="nav-item nav-link" href="<?= base_url(); ?>About">About</a>
+               <a class="nav-item nav-link" href="<?= base_url(); ?>Anggota">Anggota</a>
+               <a class="nav-item nav-link" style="color:aquamarine" href="<?= base_url(); ?>">Login <span class="sr-only">(current)</span></a>
             </div>
          </div>
       </div>

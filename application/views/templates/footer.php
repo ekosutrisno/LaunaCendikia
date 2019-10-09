@@ -1,4 +1,3 @@
-</div>
 <footer class="bg-dark p-5 fixed-bottom" style="min-height:20vh">
    <div class="container text-center text-white">
       <div class="row">
@@ -16,10 +15,10 @@
    <footer>
 
 
-      <script src="<?= base_url(); ?>assets/js/jquery-3.4.1.min.js"></script>
-      <script src="<?= base_url(); ?>assets/js/popper.min.js"></script>
-      <script src="<?= base_url(); ?>assets/js/bootstrap.min.js"></script>
-      <script src="<?= base_url(); ?>assets/js/script.js"></script>
+      <script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
+      <script src="<?= base_url('assets/'); ?>vendor/popper/popper.min.js"></script>
+      <script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script src="<?= base_url('assets/'); ?>vendor/script.js"></script>
       </body>
 
       </html>
