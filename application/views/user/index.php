@@ -11,7 +11,7 @@
    <div class="card border-left-primary shadow h-100 py-2" style="max-width:540px;">
       <div class="row no-gutters">
          <div class="col-md-4">
-            <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" class="card-img img-profile img-thumbnails">
+            <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" class="card-img img-profile rounded-circle">
          </div>
          <div class="col-md-8">
             <div class="card-body">

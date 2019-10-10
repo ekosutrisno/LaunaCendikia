@@ -143,7 +143,26 @@ class Auth extends CI_Controller
       if ($type == 'verify') {
          $this->email->subject('Confirm Activation Your Account');
          $this->email->message(
-            'Selamat datang Sahabat Launa, harap segera melakuakn activasi account anda dengan mengklik link dibawah ini : <a href="' . base_url() . 'auth/verify?email=' . $this->input->post('email') . '&token=' . urlencode($token) . '">Activate</a>'
+            '
+            <div style="
+            background:#041D2E;
+            width:300px;
+            height:150px;
+            padding:10px;
+            border-radius:10px
+            ">
+           <p style="color:white;font-size:14px"> Halo Sahabat Launa, harap segera melakuakn aktivasi account kamu sebelum 24 jam ya dengan mengklik tombol dibawah ini :</p> <br> <a style=" background:white  ;
+           padding: 10px 40px;
+           color: #151527;
+           text-decoration: none;
+           font-size: 18px;
+           border-radius: 20px;
+           margin-top: 150px;"  href="' . base_url() . 'auth/verify?email=' . $this->input->post('email') . '&token=' . urlencode($token) . '">Activate</a>
+            </div>
+            <br>
+           -Tim Pengembang Launa Cendikia-
+            
+            '
          );
       }
 

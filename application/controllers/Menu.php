@@ -65,4 +65,12 @@ class Menu extends CI_Controller
          redirect('menu/submenu');
       }
    }
+
+   public function developer()
+   {
+      $data['judul'] = 'Migrate to V.1.1';
+      $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+      $this->load->view('menu/developer', $data);
+   }
 }
