@@ -127,13 +127,14 @@ class Auth extends CI_Controller
          'smtp_port' => 465,
          'mailtype' => 'html',
          'charset' => 'utf-8',
-         'newline' => "\r\n"
+         // 'newline' => "\r\n"
       ];
-
+      // 465
 
       // !setting email 
       $this->load->library('email');
       $this->email->initialize($config);
+      $this->email->set_newline("\r\n");
 
       $this->email->from('mediapembelajaran.mtk15@gmail.com', 'Launa Cendikia MTSN 2 BDL');
       $this->email->to($this->input->post('email'));
@@ -142,7 +143,7 @@ class Auth extends CI_Controller
       if ($type == 'verify') {
          $this->email->subject('Confirm Activation Your Account');
          $this->email->message(
-            'Selamat datang Sahabat Launa, harap segera melakuakn activasi account anda dengan mengklik link dibawah ini :<a href="' . base_url() . 'auth/verify?email=' . $this->input->post('email') . '&token=' . urlencode($token) . '">Activate</a>'
+            'Selamat datang Sahabat Launa, harap segera melakuakn activasi account anda dengan mengklik link dibawah ini : <a href="' . base_url() . 'auth/verify?email=' . $this->input->post('email') . '&token=' . urlencode($token) . '">Activate</a>'
          );
       }
 
