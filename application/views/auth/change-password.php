@@ -19,32 +19,26 @@
                   <div class="col-lg">
                      <div class="p-5">
                         <div class="text-center">
-                           <h1 class="h4 text-white mb-4" style="">Login Page</h1>
+                           <h1 class="h4 text-white" style="">Change Your password for</h1>
+                           <h5 class="mb-4"><?= $this->session->userdata('reset_email'); ?></h5>
                         </div>
 
                         <!-- flasdata -->
                         <?= $this->session->flashdata('message'); ?>
 
-                        <form class="user" method="post" action="<?= base_url('auth'); ?>">
+                        <form class="user" method="post" action="<?= base_url('auth/changepassword'); ?>">
                            <div class="form-group">
-                              <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address..." value="<?= set_value('email') ?>">
-                              <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                              <input type="password" class="form-control form-control-user" id="password1" name="password1" placeholder="Enter new password...">
+                              <?= form_error('password1', '<small class="text-danger pl-3">', '</small>'); ?>
                            </div>
                            <div class="form-group">
-                              <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
-                              <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
+                              <input type="password" class="form-control form-control-user" id="password2" name="password2" placeholder="Repeat Password...">
+                              <?= form_error('password2', '<small class="text-danger pl-3">', '</small>'); ?>
                            </div>
                            <button type="submit" class="btn btn-primary btn-user btn-block">
-                              Login
+                              Change password
                            </button>
                         </form>
-                        <hr>
-                        <div class="text-center">
-                           <a class="small" href="<?= base_url('auth/forgotpassword'); ?>">Forgot Password?</a>
-                        </div>
-                        <div class="text-center">
-                           <a class="small text-white" href="<?= base_url('auth/registration'); ?>">Create an Account!</a>
-                        </div>
                      </div>
                   </div>
                </div>
